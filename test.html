@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<script src="js/tf.min.js"></script>
+<script src="js/script.js"></script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <title>壁纸性格测试</title>
+</head>
+
+<body>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <div class="px-4 pt-5 my-5 text-center">
+        <h1 class="display-4 fw-bold" id="output">壁纸性格测试</h1>
+        <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4" id="tip">一个根据壁纸推断您性格的测试</p>
+            <div class="mb-3">
+                <input class="form-control" type="file" id="formFile" accept="image/*"
+                    onchange="predict(this.files[0])" disabled>
+            </div>
+            <p class="lead mb-3" id="condition">请勿禁用 JavaScript / 首次加载请耐心等待</p>
+        </div>
+        <div class="overflow-hidden">
+            <div class="container px-5">
+                <img id="imgShow" src="example.jpg" class="img-fluid border rounded-3 shadow mb-4" loading="lazy">
+                <img id="preview" src="example.jpg" alt="图片" width="224" height="224" style="display:none;">
+            </div>
+        </div>
+        <footer class="lead py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="/index.html" class="nav-link px-2 text-muted">测试介绍</a></li>
+                <li class="nav-item"><a href="https://docs.qq.com/form/page/DZWV5SmxQbWFIRFJq?_w_tencentdocx_form=1"
+                    class="nav-link px-2 text-muted">意见反馈</a></li>
+                <!-- <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">性格测试主页</a></li> -->
+                <li class="nav-item"><a href="https://hpbtql.github.io/" class="nav-link px-2 text-muted">HPBTQL 主页</a>
+                </li>
+            </ul>
+            <p class="text-center text-muted">HPBTQL © 2022</p>
+        </footer>
+    </div>
+</body>
+
+</html>
