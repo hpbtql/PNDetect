@@ -1,4 +1,4 @@
-const CLASSES = ["结果: 您X欲强","结果: 您X冷淡","发生未知错误"];
+const CLASSES = ["结果: 您热情似火","结果: 您是一个理智的人","发生未知错误"];
 const MODEL_PATH = 'model/model.json';
 
 function file2img(file) {
